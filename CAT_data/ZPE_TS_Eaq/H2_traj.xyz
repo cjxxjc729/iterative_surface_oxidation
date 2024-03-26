@@ -1,0 +1,60 @@
+2
+Lattice="10.0 0.0 0.0 0.0 10.0 0.0 0.0 0.0 10.0" Properties=species:S:1:pos:R:3:forces:R:3 spacegroup="_JSON {\"number\": 1, \"setting\": 1}" unit_cell=conventional occupancy="_JSON {\"0\": {\"H\": 1.0}, \"1\": {\"H\": 1.0}}" energy=-5.276333747675079 free_energy=-5.276333747675079 pbc="T T T"
+H        4.41820000       5.42070000       4.50970000       1.94779033       0.00000000       0.00000000
+H        5.52820000       5.42070000       4.50970000      -1.94779033       0.00000000       0.00000000
+2
+Lattice="10.0 0.0 0.0 0.0 10.0 0.0 0.0 0.0 10.0" Properties=species:S:1:pos:R:3:forces:R:3 spacegroup="_JSON {\"number\": 1, \"setting\": 1}" unit_cell=conventional occupancy="_JSON {\"0\": {\"H\": 1.0}, \"1\": {\"H\": 1.0}}" energy=-5.3821262233803475 free_energy=-5.3821262233803475 pbc="T T T"
+H        4.44602558       5.42070000       4.50970000       1.95536205       0.00000000       0.00000000
+H        5.50037442       5.42070000       4.50970000      -1.95536205       0.00000000       0.00000000
+2
+Lattice="10.0 0.0 0.0 0.0 10.0 0.0 0.0 0.0 10.0" Properties=species:S:1:pos:R:3:forces:R:3 spacegroup="_JSON {\"number\": 1, \"setting\": 1}" unit_cell=conventional occupancy="_JSON {\"0\": {\"H\": 1.0}, \"1\": {\"H\": 1.0}}" energy=-5.362909462622573 free_energy=-5.362909462622573 pbc="T T T"
+H        4.64602558       5.42070000       4.50970000      -6.91320357       0.00000000       0.00000000
+H        5.30037442       5.42070000       4.50970000       6.91320357       0.00000000       0.00000000
+2
+Lattice="10.0 0.0 0.0 0.0 10.0 0.0 0.0 0.0 10.0" Properties=species:S:1:pos:R:3:forces:R:3 spacegroup="_JSON {\"number\": 1, \"setting\": 1}" unit_cell=conventional occupancy="_JSON {\"0\": {\"H\": 1.0}, \"1\": {\"H\": 1.0}}" energy=-5.198858172944908 free_energy=-5.198858172944908 pbc="T T T"
+H        4.49012204       5.42070000       4.50970000       1.43475022       0.00000000       0.00000000
+H        5.45627796       5.42070000       4.50970000      -1.43475022       0.00000000       0.00000000
+2
+Lattice="10.0 0.0 0.0 0.0 10.0 0.0 0.0 0.0 10.0" Properties=species:S:1:pos:R:3:forces:R:3 spacegroup="_JSON {\"number\": 1, \"setting\": 1}" unit_cell=conventional occupancy="_JSON {\"0\": {\"H\": 1.0}, \"1\": {\"H\": 1.0}}" energy=-5.282182111001177 free_energy=-5.282182111001177 pbc="T T T"
+H        4.51691695       5.42070000       4.50970000       1.71793384       0.00000000       0.00000000
+H        5.42948305       5.42070000       4.50970000      -1.71793384       0.00000000       0.00000000
+2
+Lattice="10.0 0.0 0.0 0.0 10.0 0.0 0.0 0.0 10.0" Properties=species:S:1:pos:R:3:forces:R:3 spacegroup="_JSON {\"number\": 1, \"setting\": 1}" unit_cell=conventional occupancy="_JSON {\"0\": {\"H\": 1.0}, \"1\": {\"H\": 1.0}}" energy=-4.182895440898903 free_energy=-4.182895440898903 pbc="T T T"
+H        4.67946828       5.42070000       4.50970000     -25.22223844       0.00000000       0.00000000
+H        5.26693172       5.42070000       4.50970000      25.22223844       0.00000000       0.00000000
+2
+Lattice="10.0 0.0 0.0 0.0 10.0 0.0 0.0 0.0 10.0" Properties=species:S:1:pos:R:3:forces:R:3 spacegroup="_JSON {\"number\": 1, \"setting\": 1}" unit_cell=conventional occupancy="_JSON {\"0\": {\"H\": 1.0}, \"1\": {\"H\": 1.0}}" energy=-5.3196708332105445 free_energy=-5.3196708332105445 pbc="T T T"
+H        4.52728260       5.42070000       4.50970000       1.89957808       0.00000000       0.00000000
+H        5.41911740       5.42070000       4.50970000      -1.89957808       0.00000000       0.00000000
+2
+Lattice="10.0 0.0 0.0 0.0 10.0 0.0 0.0 0.0 10.0" Properties=species:S:1:pos:R:3:forces:R:3 spacegroup="_JSON {\"number\": 1, \"setting\": 1}" unit_cell=conventional occupancy="_JSON {\"0\": {\"H\": 1.0}, \"1\": {\"H\": 1.0}}" energy=-5.361562767942289 free_energy=-5.361562767942289 pbc="T T T"
+H        4.53794149       5.42070000       4.50970000       1.99582999       0.00000000       0.00000000
+H        5.40845851       5.42070000       4.50970000      -1.99582999       0.00000000       0.00000000
+2
+Lattice="10.0 0.0 0.0 0.0 10.0 0.0 0.0 0.0 10.0" Properties=species:S:1:pos:R:3:forces:R:3 spacegroup="_JSON {\"number\": 1, \"setting\": 1}" unit_cell=conventional occupancy="_JSON {\"0\": {\"H\": 1.0}, \"1\": {\"H\": 1.0}}" energy=-0.6436290045137962 free_energy=-0.6436290045137962 pbc="T T T"
+H        4.73794149       5.42070000       4.50970000     -48.69364886       0.00000000       0.00000000
+H        5.20845851       5.42070000       4.50970000      48.69364886       0.00000000       0.00000000
+2
+Lattice="10.0 0.0 0.0 0.0 10.0 0.0 0.0 0.0 10.0" Properties=species:S:1:pos:R:3:forces:R:3 spacegroup="_JSON {\"number\": 1, \"setting\": 1}" unit_cell=conventional occupancy="_JSON {\"0\": {\"H\": 1.0}, \"1\": {\"H\": 1.0}}" energy=-5.392246933374459 free_energy=-5.392246933374459 pbc="T T T"
+H        4.54581622       5.42070000       4.50970000       1.86196911       0.00000000       0.00000000
+H        5.40058378       5.42070000       4.50970000      -1.86196911       0.00000000       0.00000000
+2
+Lattice="10.0 0.0 0.0 0.0 10.0 0.0 0.0 0.0 10.0" Properties=species:S:1:pos:R:3:forces:R:3 spacegroup="_JSON {\"number\": 1, \"setting\": 1}" unit_cell=conventional occupancy="_JSON {\"0\": {\"H\": 1.0}, \"1\": {\"H\": 1.0}}" energy=-5.416515112251499 free_energy=-5.416515112251499 pbc="T T T"
+H        4.55289222       5.42070000       4.50970000       1.53647789       0.00000000       0.00000000
+H        5.39350778       5.42070000       4.50970000      -1.53647789       0.00000000       0.00000000
+2
+Lattice="10.0 0.0 0.0 0.0 10.0 0.0 0.0 0.0 10.0" Properties=species:S:1:pos:R:3:forces:R:3 spacegroup="_JSON {\"number\": 1, \"setting\": 1}" unit_cell=conventional occupancy="_JSON {\"0\": {\"H\": 1.0}, \"1\": {\"H\": 1.0}}" energy=-5.4494747345247525 free_energy=-5.4494747345247525 pbc="T T T"
+H        4.58629438       5.42070000       4.50970000      -0.20239138       0.00000000       0.00000000
+H        5.36010562       5.42070000       4.50970000       0.20239138       0.00000000       0.00000000
+2
+Lattice="10.0 0.0 0.0 0.0 10.0 0.0 0.0 0.0 10.0" Properties=species:S:1:pos:R:3:forces:R:3 spacegroup="_JSON {\"number\": 1, \"setting\": 1}" unit_cell=conventional occupancy="_JSON {\"0\": {\"H\": 1.0}, \"1\": {\"H\": 1.0}}" energy=-5.45087487463775 free_energy=-5.45087487463775 pbc="T T T"
+H        4.58240662       5.42070000       4.50970000      -0.14925315       0.00000000       0.00000000
+H        5.36399338       5.42070000       4.50970000       0.14925315       0.00000000       0.00000000
+2
+Lattice="10.0 0.0 0.0 0.0 10.0 0.0 0.0 0.0 10.0" Properties=species:S:1:pos:R:3:forces:R:3 spacegroup="_JSON {\"number\": 1, \"setting\": 1}" unit_cell=conventional occupancy="_JSON {\"0\": {\"H\": 1.0}, \"1\": {\"H\": 1.0}}" energy=-5.450184890357074 free_energy=-5.450184890357074 pbc="T T T"
+H        4.57148679       5.42070000       4.50970000       0.28048927       0.00000000       0.00000000
+H        5.37491321       5.42070000       4.50970000      -0.28048927       0.00000000       0.00000000
+2
+Lattice="10.0 0.0 0.0 0.0 10.0 0.0 0.0 0.0 10.0" Properties=species:S:1:pos:R:3:forces:R:3 spacegroup="_JSON {\"number\": 1, \"setting\": 1}" unit_cell=conventional occupancy="_JSON {\"0\": {\"H\": 1.0}, \"1\": {\"H\": 1.0}}" energy=-5.451650639454234 free_energy=-5.451650639454234 pbc="T T T"
+H        4.57861407       5.42070000       4.50970000      -0.04678520       0.00000000       0.00000000
+H        5.36778593       5.42070000       4.50970000       0.04678520       0.00000000       0.00000000

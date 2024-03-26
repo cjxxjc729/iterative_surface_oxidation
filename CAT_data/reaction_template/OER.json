@@ -1,0 +1,12 @@
+{
+  "name": "OER",
+  "URHE.default": [1.5],
+  "fillin_mols": ["H+", "H2O", "e-"],
+  "rea_path": [
+    ["*"],
+    ["OH*"],
+    ["O*"],
+    ["OOH*"],
+    ["*", "O2"]
+  ]
+}

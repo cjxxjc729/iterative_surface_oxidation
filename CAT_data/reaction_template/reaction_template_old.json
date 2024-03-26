@@ -1,0 +1,1042 @@
+[
+  {
+    "name": "UOR",
+    "URHE.default": 1.5,
+    "fillin_mols": [
+      "e-",
+      "H2O",
+      "H+"
+    ],
+    "rea_path": [
+      [
+        "*",
+        "*",
+        "*",
+        "CON2H4"
+      ],
+      [
+        "CON2H4*",
+        "*",
+        "*"
+      ],
+      [
+        "CO*",
+        "NH*",
+        "NH*"
+      ],
+      [
+        "NH*",
+        "NH*",
+        "*",
+        "CO2"
+      ],
+      [
+        "*",
+        "*",
+        "*",
+        "N2",
+        "CO2"
+      ]
+    ]
+  },
+  {
+    "name": "NO3RR",
+    "URHE.default": 0,
+    "fillin_mols": [
+      "e-",
+      "H2O",
+      "H+"
+    ],
+    "rea_path": [
+      [
+        "*",
+        "NO3-"
+      ],
+      [
+        "NO2*"
+      ],
+      [
+        "NO*"
+      ],
+      [
+        "N*"
+      ],
+      [
+        "NH*"
+      ],
+      [
+        "NH2*"
+      ],
+      [
+        "NH3*"
+      ],
+      [
+        "*",
+        "NH3"
+      ]
+    ]
+  },
+  {
+    "name": "SNaide",
+    "URHE.default": -1.20533,
+    "fillin_mols": [
+      "e-",
+      "Na2S",
+      "Na+"
+    ],
+    "rea_path": [
+      [
+        "*",
+        "S8"
+      ],
+      [
+        "S8*"
+      ],
+      [
+        "Na2S8*"
+      ],
+      [
+        "Na2S6*"
+      ],
+      [
+        "Na2S4*"
+      ],
+      [
+        "Na2S2*"
+      ],
+      [
+        "Na2S*"
+      ],
+      [
+        "*"
+      ]
+    ]
+  },
+  {
+    "name": "CO2RR_CC_coupling",
+    "URHE.default": -0.7,
+    "fillin_mols": [
+      "e-",
+      "H2O",
+      "H+"
+    ],
+    "rea_path": [
+      [
+        "CHO-CHO*"
+      ],
+      [
+        "CHOCHO*"
+      ],
+      [
+        "CHOHCHO*"
+      ],
+      [
+        "CH2OHCHO*"
+      ],
+      [
+        "CH2CHO*"
+      ],
+      [
+        "CH2CHOH*"
+      ],
+      [
+        "CH2CH*"
+      ],
+      [
+        "C2H4"
+      ]
+    ]
+  },
+  {
+    "name": "OER",
+    "URHE.default": 1.5,
+    "fillin_mols": [
+      "e-",
+      "H2O",
+      "H+"
+    ],
+    "rea_path": [
+      [
+        "*"
+      ],
+      [
+        "OH*"
+      ],
+      [
+        "O*"
+      ],
+      [
+        "OOH*"
+      ],
+      [
+        "*",
+        "O2"
+      ]
+    ]
+  },
+  {
+    "name": "FAOR",
+    "URHE.default": 0,
+    "fillin_mols": [
+      "e-",
+      "H2O",
+      "H+"
+    ],
+    "rea_path": [
+      [
+        "*",
+        "HCOOH"
+      ],
+      [
+        "HCOOH*"
+      ],
+      [
+        "OCHO*"
+      ],
+      [
+        "CO2*"
+      ],
+      [
+        "*",
+        "CO2"
+      ]
+    ]
+  },
+  {
+    "name": "C2H2_to_C2H4",
+    "URHE.default": 0,
+    "fillin_mols": [
+      "e-",
+      "H2O",
+      "H+"
+    ],
+    "rea_path": [
+      [
+        "*",
+        "C2H2"
+      ],
+      [
+        "C2H2*"
+      ],
+      [
+        "CH2CH*"
+      ],
+      [
+        "C2H4*"
+      ],
+      [
+        "*",
+        "C2H4"
+      ]
+    ]
+  },
+  {
+    "name": "MVK-path",
+    "URHE.default": -0.4,
+    "fillin_mols": [
+      "e-",
+      "H+"
+    ],
+    "rea_path": [
+      [
+        "N*",
+        "N2"
+      ],
+      [
+        "NH3*",
+        "N2"
+      ],
+      [
+        "NH3",
+        "*",
+        "N2"
+      ],
+      [
+        "NN*",
+        "NH3"
+      ],
+      [
+        "NH-NH2*",
+        "NH3"
+      ],
+      [
+        "NH3",
+        "NH3",
+        "N*"
+      ]
+    ]
+  },
+  {
+    "name": "2eOER",
+    "URHE.default": 1.5,
+    "fillin_mols": [
+      "e-",
+      "H2O",
+      "H+"
+    ],
+    "rea_path": [
+      [
+        "*",
+        "H2O"
+      ],
+      [
+        "OH*"
+      ],
+      [
+        "*",
+        "H2O2"
+      ]
+    ]
+  },
+  {
+    "name": "CH4-path",
+    "URHE.default": -0.9,
+    "fillin_mols": [
+      "e-",
+      "H2O",
+      "H+"
+    ],
+    "rea_path": [
+      [
+        "CO2",
+        "*"
+      ],
+      [
+        "COOH*"
+      ],
+      [
+        "CO*"
+      ],
+      [
+        "CHO*"
+      ],
+      [
+        "CH2O*"
+      ],
+      [
+        "CH3O*"
+      ],
+      [
+        "CH4",
+        "O*"
+      ],
+      [
+        "CH4",
+        "OH*"
+      ],
+      [
+        "CH4",
+        "*"
+      ]
+    ]
+  },
+  {
+    "name": "HzOR",
+    "URHE.default": 0.3,
+    "fillin_mols": [
+      "e-",
+      "H2O",
+      "H+"
+    ],
+    "rea_path": [
+      [
+        "*",
+        "N2H4"
+      ],
+      [
+        "N2H4*"
+      ],
+      [
+        "N2H3*"
+      ],
+      [
+        "N2H2*"
+      ],
+      [
+        "N2H*"
+      ],
+      [
+        "N2*"
+      ],
+      [
+        "*",
+        "N2"
+      ]
+    ]
+  },
+  {
+    "name": "FAOR_to_CO",
+    "URHE.default": 0,
+    "fillin_mols": [
+      "e-",
+      "H2O",
+      "H+"
+    ],
+    "rea_path": [
+      [
+        "*",
+        "HCOOH"
+      ],
+      [
+        "HCOOH*"
+      ],
+      [
+        "COOH*"
+      ],
+      [
+        "CO*"
+      ],
+      [
+        "*",
+        "CO"
+      ]
+    ]
+  },
+  {
+    "name": "GluOR",
+    "URHE.default": 1.5,
+    "fillin_mols": [
+      "e-",
+      "H2O",
+      "H+"
+    ],
+    "rea_path": [
+      [
+        "*",
+        "C6H12O6"
+      ],
+      [
+        "C6H12O6*"
+      ],
+      [
+        "C6H11O6*"
+      ],
+      [
+        "*",
+        "C6H12O7"
+      ]
+    ]
+  },
+  {
+    "name": "CO",
+    "URHE.default": -0.9,
+    "fillin_mols": [
+      "e-",
+      "H2O",
+      "H+"
+    ],
+    "rea_path": [
+      [
+        "CO2",
+        "*"
+      ],
+      [
+        "COOH*"
+      ],
+      [
+        "CO*"
+      ],
+      [
+        "CO",
+        "*"
+      ]
+    ]
+  },
+  {
+    "name": "CO2_add",
+    "URHE.default": -0.7,
+    "fillin_mols": [
+      "e-",
+      "H2O",
+      "H+"
+    ],
+    "rea_path": [
+      [
+        "*",
+        "CO2"
+      ],
+      [
+        "CO2*"
+      ]
+    ]
+  },
+  {
+    "name": "BOR",
+    "URHE.default": 0.45,
+    "fillin_mols": [
+      "e-",
+      "H2O",
+      "H+"
+    ],
+    "rea_path": [
+      [
+        "*",
+        "BH4-"
+      ],
+      [
+        "BH4*"
+      ],
+      [
+        "BH3*"
+      ],
+      [
+        "BH2*"
+      ],
+      [
+        "BH2OH*"
+      ],
+      [
+        "BHOH*"
+      ],
+      [
+        "BHOHOH*"
+      ],
+      [
+        "BOHOH*"
+      ],
+      [
+        "BOOH*"
+      ],
+      [
+        "*",
+        "BO2-"
+      ]
+    ]
+  },
+  {
+    "name": "FAOR_COOH_path",
+    "URHE.default": 0,
+    "fillin_mols": [
+      "e-",
+      "H2O",
+      "H+"
+    ],
+    "rea_path": [
+      [
+        "*",
+        "HCOOH"
+      ],
+      [
+        "HCOOH*"
+      ],
+      [
+        "COOH*"
+      ],
+      [
+        "CO2*"
+      ],
+      [
+        "*",
+        "CO2"
+      ]
+    ]
+  },
+  {
+    "name": "CH4-path_C",
+    "URHE.default": -0.9,
+    "fillin_mols": [
+      "e-",
+      "H2O",
+      "H+"
+    ],
+    "rea_path": [
+      [
+        "CO2",
+        "*"
+      ],
+      [
+        "COOH*"
+      ],
+      [
+        "CO*"
+      ],
+      [
+        "CHO*"
+      ],
+      [
+        "C*"
+      ],
+      [
+        "CH*"
+      ],
+      [
+        "CH2*"
+      ],
+      [
+        "CH3*"
+      ],
+      [
+        "*",
+        "CH4"
+      ]
+    ]
+  },
+  {
+    "name": "UOR_extend",
+    "URHE.default": 1.5,
+    "fillin_mols": [
+      "e-",
+      "H2O",
+      "H+"
+    ],
+    "rea_path": [
+      [
+        "*",
+        "*",
+        "*",
+        "CON2H4"
+      ],
+      [
+        "CON2H4*",
+        "*",
+        "*"
+      ],
+      [
+        "CONH2*",
+        "NH2*",
+        "*"
+      ],
+      [
+        "CO*",
+        "NH2*",
+        "NH2*"
+      ],
+      [
+        "CO*",
+        "NH*",
+        "NH2*"
+      ],
+      [
+        "CO*",
+        "NH*",
+        "NH*"
+      ],
+      [
+        "COOH*",
+        "NH*",
+        "NH*"
+      ],
+      [
+        "NH*",
+        "NH*",
+        "*",
+        "CO2"
+      ],
+      [
+        "N*",
+        "NH*",
+        "*",
+        "CO2"
+      ],
+      [
+        "N*",
+        "N*",
+        "*",
+        "CO2"
+      ],
+      [
+        "*",
+        "*",
+        "*",
+        "N2",
+        "CO2"
+      ]
+    ]
+  },
+  {
+    "name": "Cl_add",
+    "URHE.default": 1.5,
+    "fillin_mols": [
+      "e-",
+      "H+",
+      "H2O",
+      "Cl-"
+    ],
+    "rea_path": [
+      [
+        "*"
+      ],
+      [
+        "Cl*"
+      ]
+    ]
+  },
+  {
+    "name": "HCHO_2_HCOOH",
+    "URHE.default": 0,
+    "fillin_mols": [
+      "e-",
+      "H2O",
+      "H+"
+    ],
+    "rea_path": [
+      [
+        "*",
+        "HCHO"
+      ],
+      [
+        "HCOHHO*"
+      ],
+      [
+        "*",
+        "HCOOH"
+      ]
+    ]
+  },
+  {
+    "name": "2eORR",
+    "URHE.default": 0.55,
+    "fillin_mols": [
+      "e-",
+      "H2O",
+      "H+"
+    ],
+    "rea_path": [
+      [
+        "*",
+        "O2"
+      ],
+      [
+        "OOH*"
+      ],
+      [
+        "*",
+        "H2O2"
+      ]
+    ]
+  },
+  {
+    "name": "N_add",
+    "URHE.default": 0,
+    "fillin_mols": [
+      "e-",
+      "H2O",
+      "H+"
+    ],
+    "rea_path": [
+      [
+        "*",
+        "NO3-"
+      ],
+      [
+        "N*"
+      ]
+    ]
+  },
+  {
+    "name": "ORR",
+    "URHE.default": 0.9,
+    "fillin_mols": [
+      "e-",
+      "H2O",
+      "H+"
+    ],
+    "rea_path": [
+      [
+        "*",
+        "O2"
+      ],
+      [
+        "OOH*"
+      ],
+      [
+        "O*"
+      ],
+      [
+        "OH*"
+      ],
+      [
+        "*"
+      ]
+    ]
+  },
+  {
+    "name": "HER",
+    "URHE.default": 0,
+    "fillin_mols": [
+      "e-",
+      "H+"
+    ],
+    "rea_path": [
+      [
+        "*"
+      ],
+      [
+        "H*"
+      ],
+      [
+        "*",
+        "H2"
+      ]
+    ]
+  },
+  {
+    "name": "MOR_2_HCOOH",
+    "URHE.default": 1.4,
+    "fillin_mols": [
+      "e-",
+      "H2O",
+      "H+"
+    ],
+    "rea_path": [
+      [
+        "CH3OH",
+        "*"
+      ],
+      [
+        "CH3OH*"
+      ],
+      [
+        "H2COH*"
+      ],
+      [
+        "CH2O*"
+      ],
+      [
+        "CHO*"
+      ],
+      [
+        "HCOOH*"
+      ],
+      [
+        "HCOOH",
+        "*"
+      ]
+    ]
+  },
+  {
+    "name": "NO2_add",
+    "URHE.default": 0,
+    "fillin_mols": [
+      "e-",
+      "H2O",
+      "H+"
+    ],
+    "rea_path": [
+      [
+        "*",
+        "NO3-"
+      ],
+      [
+        "NO2*"
+      ]
+    ]
+  },
+  {
+    "name": "OH_adsorption",
+    "URHE.default": 1.23,
+    "fillin_mols": [
+      "e-",
+      "H2O",
+      "H+"
+    ],
+    "rea_path": [
+      [
+        "*",
+        "H2O"
+      ],
+      [
+        "OH*"
+      ]
+    ]
+  },
+  {
+    "name": "GOR",
+    "URHE.default": 1.25,
+    "fillin_mols": [
+      "e-",
+      "H2O",
+      "H+"
+    ],
+    "rea_path": [
+      [
+        "*",
+        "C3H8O3"
+      ],
+      [
+        "C3H6O3*"
+      ],
+      [
+        "C3H5O4*"
+      ],
+      [
+        "C2H3O3*",
+        "HCOOH"
+      ],
+      [
+        "*",
+        "HCOOH",
+        "HCOOH",
+        "HCOOH"
+      ]
+    ]
+  },
+  {
+    "name": "SLiide",
+    "URHE.default": -1.758,
+    "fillin_mols": [
+      "e-",
+      "Li2S",
+      "Li+"
+    ],
+    "rea_path": [
+      [
+        "*",
+        "S8"
+      ],
+      [
+        "Li2S8*"
+      ],
+      [
+        "Li2S6*"
+      ],
+      [
+        "Li2S4*"
+      ],
+      [
+        "Li2S2*"
+      ],
+      [
+        "Li2S*"
+      ],
+      [
+        "*"
+      ]
+    ]
+  },
+  {
+    "name": "MOR",
+    "URHE.default": 1.4,
+    "fillin_mols": [
+      "e-",
+      "H2O",
+      "H+"
+    ],
+    "rea_path": [
+      [
+        "CH3OH",
+        "*"
+      ],
+      [
+        "CH3OH*"
+      ],
+      [
+        "H2COH*"
+      ],
+      [
+        "CH2O*"
+      ],
+      [
+        "CHO*"
+      ],
+      [
+        "HCOOH*"
+      ],
+      [
+        "COOH*"
+      ],
+      [
+        "CO*"
+      ],
+      [
+        "CO",
+        "*"
+      ]
+    ]
+  },
+  {
+    "name": "OEReq",
+    "URHE.default": 1.23,
+    "fillin_mols": [
+      "e-",
+      "H2O",
+      "H+"
+    ],
+    "rea_path": [
+      [
+        "*",
+        "H2O"
+      ],
+      [
+        "OH*"
+      ],
+      [
+        "O*"
+      ],
+      [
+        "OOH*"
+      ],
+      [
+        "*",
+        "O2"
+      ]
+    ]
+  },
+  {
+    "name": "HCOOH_path",
+    "URHE.default": -0.8,
+    "fillin_mols": [
+      "e-",
+      "H2O",
+      "H+"
+    ],
+    "rea_path": [
+      [
+        "CO2",
+        "*"
+      ],
+      [
+        "CO2*"
+      ],
+      [
+        "OCHO*"
+      ],
+      [
+        "HCOOH*"
+      ],
+      [
+        "HCOOH",
+        "*"
+      ]
+    ]
+  },
+  {
+    "name": "CO_dimerization",
+    "URHE.default": -0.9,
+    "fillin_mols": [
+      "e-",
+      "H2O",
+      "H+"
+    ],
+    "rea_path": [
+      [
+        "*",
+        "CO2"
+      ],
+      [
+        "CO*"
+      ],
+      [
+        "COCO*"
+      ]
+    ]
+  },
+  {
+    "name": "oxidation",
+    "URHE.default": 0,
+    "fillin_mols": [
+      "e-",
+      "H2O",
+      "H+"
+    ],
+    "rea_path": [
+      [
+        "*",
+        "H2O"
+      ],
+      [
+        "O*"
+      ]
+    ]
+  }
+]
