@@ -100,7 +100,7 @@ def fill_in_adsorbates(role, catalytic_reaction_name, atoms, atm_ids_adb):
   '''
   在已知role(adb0)的情况, 根据catalytic_reaction_name补齐剩下的吸附质
   '''
-  input_dic = parse_input_file('input.parameters')
+  input_dic = parse_input_file('input_parameters.json')
   dir_4_ref_str = input_dic['fid_ref_str']
 
   #1 根据role获all adbs
@@ -281,7 +281,7 @@ def delete_files_starting_with_final():
 
 if __name__ == "__main__":
    
-  input_dic = parse_input_file('input.parameters')
+  input_dic = parse_input_file('input_parameters.json')
 
   f_ZPE = input_dic['f_ZPE']
   f_Eaq = input_dic['f_Eaq']
@@ -301,10 +301,10 @@ if __name__ == "__main__":
   #--------------------------------#
   
   #--------input extended----------#
-  if cal_tot_signal == 'False':
+  if cal_tot_signal == False:
     nstep = int(input_dic['nstep'])
   
-    if restart_signal == 'False':
+    if restart_signal == False:
 
       mkdir('relax_trj')
       f_str0 = './relax_trj/0000.xyz'  #starts from 0000.xyz
@@ -361,7 +361,7 @@ if __name__ == "__main__":
     '''
     nl = ini_nl(atoms,set_cutoff=ocutoff)  #根据ocutoff计算nl
     #judge whether to calcualte tot TOF
-    if cal_tot_signal == 'False':
+    if cal_tot_signal == False:
       uniq_cluster_id_sel =  site_selection(atoms, data_atmid_clusterid, catalytic_reaction_name , cutoff=icutoff*3) #选取cluster, 要求距离10以上，取尽可能多的表面位
       fid_str_opt_center = 'str_opt_center'
     else:
@@ -399,7 +399,7 @@ if __name__ == "__main__":
       for adb_name0 in possible_adb_names: 
  	
         '''		  
-	1.3 逐一遍历adb_names, 构建吸附位和role依赖的的 O OH OOH和blank.cif 给在fid_str_opt_center文件夹中。  
+	      1.3 逐一遍历adb_names, 构建吸附位和role依赖的的 O OH OOH和blank.cif 给在fid_str_opt_center文件夹中。  
         '''
         #创建atoms_core.atoms_core是去掉吸附质的版本， atm_ids_in_core是未去掉吸附质的版本. c_atm_id是经由role求得的吸附位id. 
         atoms_core, atm_ids_in_core, c_atm_id = make_core(atoms, atm_ids_adb, adb_name0, nl)  
@@ -411,7 +411,7 @@ if __name__ == "__main__":
         fix_list = gen_fix_list(atoms_core, icutoff) 
 
         '''
-	1.3.1 添加吸附质, 由于atoms_core的特点， 吸附位位于0， 所以可以方便的写[0]. 吸附质给在atoms的尾巴. 而后分别给出各个吸附质cutmodel 的f_xyz和f_fix_list
+	      1.3.1 添加吸附质, 由于atoms_core的特点， 吸附位位于0， 所以可以方便的写[0]. 吸附质给在atoms的尾巴. 而后分别给出各个吸附质cutmodel 的f_xyz和f_fix_list
 
         '''
         #创建通过吸附质名字所得到atoms的字典dict_atoms_by_adb_name . adb_names1 是f_cat_rea_adbs中读出的所有吸附质的名字
@@ -451,7 +451,7 @@ if __name__ == "__main__":
     1.5.calculate and output atoms_shell from atm_ids_in_core_tot
     '''
 
-    if cal_tot_signal == 'False':
+    if cal_tot_signal == False:
       atm_ids_in_shell = [x for x in list(range(len(atoms))) if x not in atm_ids_in_core_tot]
       atoms_shell = atoms[atm_ids_in_shell]
 

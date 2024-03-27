@@ -7,7 +7,7 @@ import os
 import time
 import re
 import shutil
-
+import json
 
 def mkdir(path):
   if os.path.exists(path):
@@ -24,28 +24,37 @@ def mkdir_if_not_exists(directory_path):
 
 
 def parse_input_file(filename):
-    variables = {}
+   
     with open(filename, 'r') as file:
-        for line in file:
-            # 去除行尾的换行符并检查是否包含'='
-            if '=' in line.strip():
-                # 分割键和值
-                key, value = line.split('=', 1)
-                # 去除键和值周围的空格
-                key = key.strip()
-                value = value.strip()
-                # 尝试将值转换为整数，如果失败则保持字符串格式
-                try:
-                    value = int(value)
-                except ValueError:
-                    # 尝试转换为浮点数，如果失败则保持字符串格式
-                    try:
-                        value = float(value)
-                    except ValueError:
-                        pass
-                # 将键值对添加到字典中
-                variables[key] = value
-    return variables
+      json_data = json.load(file)
+
+    results = extract_values_with_parent_keys(json_data)
+  
+    return results
+
+
+def extract_values_with_parent_keys(obj, parent_key='', result=None):
+    if result is None:
+        result = {}
+
+    if isinstance(obj, dict):
+        for key, value in obj.items():
+            # 如果值是字典，继续递归，但不更新结果
+            if isinstance(value, dict):
+                extract_values_with_parent_keys(value, key, result)
+            elif isinstance(value, list):
+                # 对于列表，我们遍历每个元素，但传递当前的key作为父key
+                for item in value:
+                    extract_values_with_parent_keys(item, key, result)
+            else:
+                # 对于非字典和列表的值，直接使用父key作为结果字典的key
+                result[key] = value
+    elif isinstance(obj, list):
+        # 如果直接就是列表，对每个元素递归调用本函数
+        for item in obj:
+            extract_values_with_parent_keys(item, parent_key, result)
+
+    return result
 
 
 
@@ -53,7 +62,7 @@ def parse_input_file(filename):
 
 if __name__ == "__main__":
 
-  f_input = 'input.parameters'
+  f_input = 'input_parameters.json'
 
   variables = parse_input_file(f_input)
 

@@ -37,7 +37,7 @@ from ase.constraints import FixAtoms
 
 from file_operation import *
 
-#input_dic = parse_input_file('input.parameters')
+#input_dic = parse_input_file('input_parameters.json')
 
 #f_ZPE = input_dic['f_ZPE']
 #f_Eaq = input_dic['f_Eaq']
@@ -81,7 +81,7 @@ def collect_traj_4_dpgen(src_directory, dest_directory):
 def sub_opt_by_jobs():
   
   start_time = time.time()
-  input_dic = parse_input_file('../input.parameters')
+  input_dic = parse_input_file('../input_parameters.json')
   sub_script = input_dic['opt_script'] 
 
   # 命令和需要传递给命令的输入
@@ -128,7 +128,7 @@ def sub_opt_by_jobs():
 
 if __name__ == "__main__":
 
-  input_dic = parse_input_file('../input.parameters')
+  input_dic = parse_input_file('../input_parameters.json')
 
   f_dpin = input_dic['f_dpin']
   f_ZPE = input_dic['f_ZPE']

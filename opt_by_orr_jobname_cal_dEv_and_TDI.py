@@ -163,7 +163,7 @@ def make_FED_test(dic_Gadb, data_Eaq, f_cat_rea_adbs, U):
 def select_opt_str():
 
   #------------------
-  input_dic = parse_input_file('../input.parameters')
+  input_dic = parse_input_file('../input_parameters.json')
 
   f_ZPE = input_dic['f_ZPE']
   f_Eaq = input_dic['f_Eaq']
@@ -194,7 +194,7 @@ def select_opt_str():
   unique_x = set(x for x, _ in xy_tuples)
   unique_y = set(y for _, y in xy_tuples)
 
-  if cal_tot_signal == 'False':
+  if cal_tot_signal == False:
     atoms_new_TDI = read('shell.xyz')
   else:
     atoms_new_TDI = Atoms()

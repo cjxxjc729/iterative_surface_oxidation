@@ -32,7 +32,7 @@ def blankcing_reactions(adb_rea,adb_pro,filler_mols):
   
 
   #
-  max_attempts = 30
+  max_attempts = 300
   attempts = 0
 
   while attempts < max_attempts:
@@ -203,7 +203,7 @@ def gen_FED(jobname, catalytic_reaction_name, dic_Gadb, dic_Eaq, URHE='default')
 
   
   #init--------------------------------------------
-  input_dic = parse_input_file('../input.parameters') 
+  input_dic = parse_input_file('../input_parameters.json') 
 
   f_ZPE = input_dic['f_ZPE']
   f_Eaq = input_dic['f_Eaq']
@@ -258,7 +258,7 @@ if __name__ == "__main__":
   #1
   #adb_rea = 'O'
   #adb_pro = 'OOH'
-  input_dic = parse_input_file('../input.parameters')
+  input_dic = parse_input_file('../input_parameters.json')
  
   jobname = sys.argv[1] 
   f_ZPE = input_dic['f_ZPE']
