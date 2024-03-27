@@ -417,6 +417,10 @@ if __name__ == "__main__":
         #创建通过吸附质名字所得到atoms的字典dict_atoms_by_adb_name . adb_names1 是f_cat_rea_adbs中读出的所有吸附质的名字
         dict_atoms_by_adb_name, adb_names1 = fill_in_adsorbates('blank', catalytic_reaction_name, atoms_core, [0]) 
         #测试，考虑原始的结构可能会合理一些。 建议保留
+        '''
+        将根据吸附质的位置，找到其底下一个虚位置。然后根据这个虚位置来做其他的吸附质。
+        我原来的方案是找到位点，然后加吸附质。这种加吸附质的方案相对稳定一些。
+        '''
         if adb_name0 != 'blank':
           atoms_core_with_adb_name0 = atoms_core + atoms[atm_ids_adb]
           dict_atoms_by_adb_name[adb_name0] = atoms_core_with_adb_name0

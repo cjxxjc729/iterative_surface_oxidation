@@ -4,6 +4,7 @@
         "cal_tot": false,
         "restart": false,
         "save_str_4_model_dev": true,
+        "relax_between_each_step": false,
         "nstep": 40
     },
     "reference_files": {
