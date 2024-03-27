@@ -8,17 +8,17 @@
         "nstep": 40
     },
     "reference_files": {
-        "f_ZPE": "/home/cjx/Desktop/works/my_work/z.reposity/iterative_surface_oxidation/CAT_data/ZPE_TS_Eaq/ZPE_TS.json",
-        "f_Eaq": "/home/cjx/Desktop/works/my_work/z.reposity/iterative_surface_oxidation/CAT_data/ZPE_TS_Eaq/E_aq.json",
-        "f_reaction_template": "/home/cjx/Desktop/works/my_work/z.reposity/iterative_surface_oxidation/CAT_data/reaction_template/reaction_template.json",
-        "fid_ref_str": "/home/cjx/Desktop/works/my_work/z.reposity/iterative_surface_oxidation/CAT_data/ref_str"
+        "f_ZPE": "./CAT_data/ZPE_TS_Eaq/ZPE_TS.json",
+        "f_Eaq": "./CAT_data/ZPE_TS_Eaq/E_aq.json",
+        "f_reaction_template": "./CAT_data/reaction_template/reaction_template.json",
+        "fid_ref_str": "./CAT_data/ref_str"
     },
     "reaction_info": {
         "ocutoff": 7,
         "icutoff": 4,
         "catalytic_reaction_name": "ORR",
         "URHE": "default",
-        "f_dpin": "/home/cjx/Desktop/works/my_work/z.reposity/iterative_surface_oxidation/CAT_data/OC_10M.pb",
+        "f_dpin": "./CAT_data/OC_10M.pb",
         "max_opt_step": 5,
         "opt_script": "sub_all_xyz.by_jobname.by_hand.sh"
     }

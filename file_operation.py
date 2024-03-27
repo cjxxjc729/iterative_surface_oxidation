@@ -28,9 +28,31 @@ def parse_input_file(filename):
     with open(filename, 'r') as file:
       json_data = json.load(file)
 
+    convert_paths_to_absolute(json_data)
+
+    with open(filename, 'w') as file:
+      json.dump(json_data, file, indent=4)
+
     results = extract_values_with_parent_keys(json_data)
   
     return results
+
+
+def convert_paths_to_absolute(obj):
+    if isinstance(obj, dict):
+        for key, value in list(obj.items()):
+            if isinstance(value, dict) or isinstance(value, list):
+                convert_paths_to_absolute(value)
+            else:
+                if isinstance(value, str) and '/' in value:
+                    obj[key] = os.path.abspath(value)
+    elif isinstance(obj, list):
+        for i, item in enumerate(obj):
+            if isinstance(item, dict) or isinstance(item, list):
+                convert_paths_to_absolute(item)
+            else:
+                if isinstance(item, str) and '/' in item:
+                    obj[i] = os.path.abspath(item)
 
 
 def extract_values_with_parent_keys(obj, parent_key='', result=None):
@@ -47,6 +69,9 @@ def extract_values_with_parent_keys(obj, parent_key='', result=None):
                 for item in value:
                     extract_values_with_parent_keys(item, key, result)
             else:
+                #相对路径转绝对路径
+                #if isinstance(value, str) and '/' in value:
+                #    value = os.path.abspath(value)
                 # 对于非字典和列表的值，直接使用父key作为结果字典的key
                 result[key] = value
     elif isinstance(obj, list):
